@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        tools:context=".MainActivity"
+    android:background="#FFFFFF"
+     >
+
+    <EditText
+        android:id="@+id/Your_Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:hint="Name"
+        android:inputType="textCapWords"
+        android:minHeight="48dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        />
+
+    <TextView
+
+        android:text="Toppings"
+
+      style="@style/CustomText"
+
+        />
+
+    <CheckBox
+        android:id="@+id/whipped_cream"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" :   Whipped cream"
+        android:textSize="23sp"
+        android:padding="13dp"
+
+        android:textColor="@color/black"
+        />
+    <CheckBox
+        android:id="@+id/chocolate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" :   Add Chocolate"
+        android:textSize="23sp"
+        android:padding="13dp"
+
+        android:textColor="@color/black"
+        />
+    <TextView
+
+        android:text="quantity"
+       android:paddingBottom="4dp"
+        style="@style/CustomText"
+
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="0dp">
+
+        <Button
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="8dp"
+            android:background="#808080"
+            android:onClick="miNus"
+            android:padding="0dp"
+            android:text="-"
+            android:textSize="14sp" />
+
+
+        <TextView
+            android:id="@+id/quantity_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+
+
+            android:text="0"
+
+            android:textColor="#000000"
+            android:textSize="30sp" />
+
+        <Button
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="8dp"
+            android:background="#808080"
+
+            android:onClick="pLus"
+            android:text="+"
+            android:textSize="14sp" />
+    </LinearLayout>
+<!--    <TextView-->
+
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textSize="34sp"-->
+
+<!--        android:text="Details"-->
+<!--        android:textColor="#000000"-->
+
+<!--        android:layout_marginTop="0dp"-->
+<!--        android:paddingLeft="12dp"-->
+
+<!--        />-->
+    <TextView
+        android:id="@+id/price_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="34sp"
+
+        android:textColor="#000000"
+
+        android:layout_marginTop="0dp"
+
+        android:paddingLeft="12dp"
+
+        />
+
+
+
+        <Button
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="order"
+            android:layout_marginLeft="12dp"
+            android:onClick="submitOrder"
+            />
+
+    </LinearLayout>
+
+
